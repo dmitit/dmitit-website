@@ -1,10 +1,13 @@
 {
+   "homepage": "http://dmitit.github.io/dmitit-website",
    "name": "dmiten",
    "version": "1.0.0",
    "description": "",
    "private": true,
    "scripts": {
       "build": "webpack --mode development",
+      "predeploy": "pnpm run build",
+      "deploy": "gh-pages -d build",
       "serve": "webpack serve --mode development",
       "lint": "eslint .",
       "format": "prettier . --write"
@@ -21,6 +24,7 @@
       "autoprefixer": "^10.4.20",
       "babel-loader": "^9.1.3",
       "css-loader": "^7.1.2",
+      "gh-pages": "^6.2.0",
       "html-webpack-plugin": "^5.6.0",
       "postcss": "^8.4.44",
       "postcss-loader": "^8.1.1",
