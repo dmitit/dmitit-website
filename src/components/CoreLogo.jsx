@@ -5,9 +5,9 @@ function CoreLogo() {
       <>
          <Link
             to="/"
-            className="font-normal text-white text-[2.6rem] hover:text-[#47ffe3] transition-[color] duration-300"
+            className="font-normal text-white text-[2.6rem] group transition-[color] duration-300"
          >
-            dmit.en
+            dmit<span className="group-hover:text-[#47ffe3]">/</span>it
          </Link>
       </>
    );
