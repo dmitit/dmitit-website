@@ -6,7 +6,7 @@
    "private": true,
    "scripts": {
       "build": "webpack --mode development",
-      "deploy": "gh-pages -d build",
+      "deploy": "gh-pages -d dist",
       "serve": "webpack serve --mode development",
       "lint": "eslint .",
       "format": "prettier . --write"
